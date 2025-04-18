@@ -1,0 +1,118 @@
+:root {
+  /* Color System */
+  --color-primary-50: #EBF5FF;
+  --color-primary-100: #D6EBFF;
+  --color-primary-200: #ADC8FF;
+  --color-primary-300: #85ADFF;
+  --color-primary-400: #5E93FF;
+  --color-primary-500: #0A84FF; /* Primary blue */
+  --color-primary-600: #0071E3;
+  --color-primary-700: #0062C8;
+  --color-primary-800: #0050A3;
+  --color-primary-900: #003D80;
+
+  --color-secondary-50: #E6F8FB;
+  --color-secondary-100: #CCEBF1;
+  --color-secondary-200: #99D8E4;
+  --color-secondary-300: #66C4D7;
+  --color-secondary-400: #30B0C7; /* Secondary teal */
+  --color-secondary-500: #0096B7;
+  --color-secondary-600: #007D99;
+  --color-secondary-700: #00657A;
+  --color-secondary-800: #004C5C;
+  --color-secondary-900: #003340;
+
+  --color-accent-50: #F1F1FE;
+  --color-accent-100: #E4E3FD;
+  --color-accent-200: #C9C7FB;
+  --color-accent-300: #ADABF9;
+  --color-accent-400: #908EF7;
+  --color-accent-500: #5E5CE6; /* Accent purple */
+  --color-accent-600: #4B49B8;
+  --color-accent-700: #39388A;
+  --color-accent-800: #26265C;
+  --color-accent-900: #13132E;
+
+  --color-success-50: #E9FBF0;
+  --color-success-100: #D4F7E2;
+  --color-success-200: #A8EFC4;
+  --color-success-300: #7DE8A7;
+  --color-success-400: #52E089;
+  --color-success-500: #34C759; /* Success green */
+  --color-success-600: #28A048;
+  --color-success-700: #1E7A36;
+  --color-success-800: #145324;
+  --color-success-900: #0A2C12;
+
+  --color-warning-50: #FFF8E6;
+  --color-warning-100: #FFF1CC;
+  --color-warning-200: #FFE399;
+  --color-warning-300: #FFD566;
+  --color-warning-400: #FFC733;
+  --color-warning-500: #FF9500; /* Warning orange */
+  --color-warning-600: #CC7800;
+  --color-warning-700: #995A00;
+  --color-warning-800: #663C00;
+  --color-warning-900: #331E00;
+
+  --color-error-50: #FFECEB;
+  --color-error-100: #FFD9D7;
+  --color-error-200: #FFB3AF;
+  --color-error-300: #FF8D87;
+  --color-error-400: #FF675F;
+  --color-error-500: #FF3B30; /* Error red */
+  --color-error-600: #CC2F26;
+  --color-error-700: #99231D;
+  --color-error-800: #661713;
+  --color-error-900: #330C0A;
+
+  --color-neutral-50: #F9FAFB;
+  --color-neutral-100: #F3F4F6;
+  --color-neutral-200: #E5E7EB;
+  --color-neutral-300: #D1D5DB;
+  --color-neutral-400: #9CA3AF;
+  --color-neutral-500: #6B7280;
+  --color-neutral-600: #4B5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1F2937;
+  --color-neutral-900: #111827;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  
+  /* Spacing System (8px grid) */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem;  /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem;    /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem;  /* 24px */
+  --space-8: 2rem;    /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem;   /* 48px */
+  --space-16: 4rem;   /* 64px */
+  --space-20: 5rem;   /* 80px */
+  --space-24: 6rem;   /* 96px */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Border Radius */
+  --radius-sm: 0.125rem; /* 2px */
+  --radius: 0.25rem;     /* 4px */
+  --radius-md: 0.375rem; /* 6px */
+  --radius-lg: 0.5rem;   /* 8px */
+  --radius-xl: 0.75rem;  /* 12px */
+  --radius-2xl: 1rem;    /* 16px */
+  --radius-full: 9999px; /* Fully rounded */
+  
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition: 200ms;
+  --transition-slow: 300ms;
+  --easing: cubic-bezier(0.16, 1, 0.3, 1);
+}

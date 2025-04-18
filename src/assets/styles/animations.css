@@ -1,0 +1,234 @@
+/* Fade animations */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--transition) ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Slide animations */
+.slide-up-enter-active,
+.slide-up-leave-active,
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: transform var(--transition) ease, opacity var(--transition) ease;
+  overflow: hidden;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.slide-down-enter-from,
+.slide-down-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+/* Scale animations */
+.scale-enter-active,
+.scale-leave-active {
+  transition: transform var(--transition) ease, opacity var(--transition) ease;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+/* Page transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity var(--transition-slow) ease, transform var(--transition-slow) ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+/* Modal animations */
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity var(--transition) ease;
+}
+
+.modal-enter-active .modal-container,
+.modal-leave-active .modal-container {
+  transition: transform var(--transition) var(--easing), opacity var(--transition) var(--easing);
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-from .modal-container,
+.modal-leave-to .modal-container {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+/* Pulsing animation for loading indicators */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Shimmer loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    to right,
+    var(--color-neutral-100) 8%,
+    var(--color-neutral-200) 18%,
+    var(--color-neutral-100) 33%
+  );
+  background-size: 800px 104px;
+  animation: shimmer 1.5s linear infinite;
+}
+
+/* Hover animations */
+.hover-lift {
+  transition: transform var(--transition) ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.hover-scale {
+  transition: transform var(--transition) ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Badge animation */
+@keyframes badge-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.badge-animate {
+  animation: badge-pulse 2s infinite;
+}
+
+/* Button tap/click effect */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1) translate(-50%, -50%);
+  transform-origin: 50% 50%;
+}
+
+.btn:active::after {
+  opacity: 0.3;
+  animation: ripple 0.4s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0) translate(-50%, -50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+/* List item entrance animation */
+.list-enter-active {
+  transition: all var(--transition) ease;
+}
+
+.list-enter-from {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* Fade animations with different delays for children */
+.stagger-enter-active > *,
+.stagger-leave-active > * {
+  transition: all var(--transition) ease-in-out;
+}
+
+.stagger-enter-from > *:nth-child(1),
+.stagger-leave-to > *:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.stagger-enter-from > *:nth-child(2),
+.stagger-leave-to > *:nth-child(2) {
+  transition-delay: 50ms;
+}
+
+.stagger-enter-from > *:nth-child(3),
+.stagger-leave-to > *:nth-child(3) {
+  transition-delay: 100ms;
+}
+
+.stagger-enter-from > *:nth-child(4),
+.stagger-leave-to > *:nth-child(4) {
+  transition-delay: 150ms;
+}
+
+.stagger-enter-from > *:nth-child(5),
+.stagger-leave-to > *:nth-child(5) {
+  transition-delay: 200ms;
+}
+
+.stagger-enter-from > * {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.stagger-leave-to > * {
+  opacity: 0;
+  transform: translateY(-15px);
+}

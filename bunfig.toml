@@ -1,0 +1,16 @@
+[install]
+peer = true
+hoisted = true
+exact = false
+
+[install.cache]
+dir = ".bun/install/cache"
+
+[install.lockfile]
+path = "bun.lock"
+
+[test]
+coverage = false
+
+[dev]
+port = 5173 
