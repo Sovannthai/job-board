@@ -1,4 +1,4 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + TypeScript + Vite + Tailwind CSS
 # Home Page
 ![image](https://github.com/user-attachments/assets/66922190-db9e-42e7-ad7e-b2366137acc7)
 
